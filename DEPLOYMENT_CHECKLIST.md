@@ -73,7 +73,7 @@ REACT_APP_API_URL=https://your-backend.onrender.com
 ## Critical Updates Made
 
 ### Backend Changes
-✅ Added `gunicorn==21.2.0` to requirements.txt
+✅ Added `gunicorn==22.0.0` to requirements.txt (security update)
 ✅ Updated CORS to accept environment variable for frontend URL
 ✅ Added PostgreSQL support (with SQLite fallback)
 ✅ Port binding from `PORT` environment variable

@@ -13,7 +13,9 @@ Your AQI Forecast Platform is now **100% deployment ready** for:
 ### Backend (Render) - ✅ Complete
 1. ✅ **Procfile** created - Gunicorn web server configuration
 2. ✅ **runtime.txt** created - Python 3.11.0 specified
-3. ✅ **requirements.txt** updated - Added `gunicorn==21.2.0`
+3. ✅ **requirements.txt** updated - Dependencies updated for Python 3.14+ compatibility
+   - numpy 1.26.4, scikit-learn 1.4.0, xgboost 2.0.3, pandas 2.2.0
+   - gunicorn 22.0.0 (security update - fixes HTTP smuggling vulnerabilities)
 4. ✅ **render.yaml** created - Deployment configuration
 5. ✅ **.env.example** created - Environment variable template
 6. ✅ **app.py** updated:

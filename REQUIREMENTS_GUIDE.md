@@ -13,6 +13,7 @@ numpy==1.26.4          # Numerical operations (updated for Python 3.14+)
 scikit-learn==1.4.0    # ML utilities (updated for Python 3.14+)
 xgboost==2.0.3         # Model loading (updated for Python 3.14+)
 pandas==2.2.0          # Data handling (updated for Python 3.14+)
+gunicorn==22.0.0       # WSGI server (security update)
 ```
 
 **Install:**

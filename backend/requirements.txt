@@ -2,7 +2,7 @@
 Flask==2.3.3
 Flask-SQLAlchemy==3.0.5
 Flask-CORS==4.0.0
-gunicorn==21.2.0
+gunicorn==22.0.0
 
 # ML & Data Processing - Updated for Python 3.14 compatibility
 numpy==1.26.4

@@ -68,7 +68,7 @@ if [ -f "requirements.txt" ]; then
         echo -e "${GREEN}  ✓${NC} gunicorn found: $GUNICORN_VERSION"
         
         # Check if it's version 22.0.0 or higher (security fix)
-        if grep -q "gunicorn==22.0.0\|gunicorn>=22" requirements.txt; then
+        if grep -E "gunicorn==22\.0\.0|gunicorn>=22" requirements.txt > /dev/null; then
             echo -e "${GREEN}    ✓${NC} Using secure gunicorn version (22.0.0+)"
         else
             echo -e "${YELLOW}    ⚠${NC} Consider upgrading gunicorn to 22.0.0+ for security"
@@ -88,7 +88,7 @@ if [ -f "requirements.txt" ]; then
     fi
     
     # Check for ML dependencies
-    if grep -q "numpy\|scikit-learn\|xgboost" requirements.txt; then
+    if grep -E "numpy|scikit-learn|xgboost" requirements.txt > /dev/null; then
         echo -e "${GREEN}  ✓${NC} ML dependencies found"
     else
         echo -e "${YELLOW}  ⚠${NC} ML dependencies missing (app may use fallback)"

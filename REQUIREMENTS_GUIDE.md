@@ -9,10 +9,11 @@ Core dependencies to run the Flask server:
 Flask==2.3.3           # Web framework
 Flask-SQLAlchemy==3.0.5  # Database ORM
 Flask-CORS==4.0.0      # CORS handling
-numpy==1.24.3          # Numerical operations
-scikit-learn==1.3.0    # ML utilities
-xgboost==1.7.6         # Model loading
-pandas==2.0.3          # Data handling
+numpy==1.26.4          # Numerical operations (updated for Python 3.14+)
+scikit-learn==1.4.0    # ML utilities (updated for Python 3.14+)
+xgboost==2.0.3         # Model loading (updated for Python 3.14+)
+pandas==2.2.0          # Data handling (updated for Python 3.14+)
+gunicorn==22.0.0       # WSGI server (security update)
 ```
 
 **Install:**

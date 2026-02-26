@@ -1,0 +1,30 @@
+# Local environment variables (not committed to git)
+.env
+.env.local
+.env.production.local
+
+# Backend
+backend/__pycache__/
+backend/*.pyc
+backend/database.db
+backend/instance/
+backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.production.local
+
+# ML Models (large files - store separately)
+backend/*.pkl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

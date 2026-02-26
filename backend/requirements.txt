@@ -1,0 +1,16 @@
+# Flask Backend Dependencies
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+Flask-CORS==4.0.0
+gunicorn==21.2.0
+
+# ML & Data Processing
+numpy==1.24.3
+scikit-learn==1.3.0
+xgboost==1.7.6
+
+# HTTP Requests
+requests==2.31.0
+
+# Optional but recommended
+pandas==2.0.3
